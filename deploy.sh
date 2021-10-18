@@ -3,9 +3,9 @@
 # 确保脚本抛出遇到的错误
 set -e
 
-initDist(){
-  echo $1 > base.js
-}
+#initDist(){
+#  echo $1 > base.js
+#}
 
 
 
@@ -27,7 +27,7 @@ if [ -z "$GITHUB_TOKEN" ]; then
 else
   # 自动部署
   msg='来自github actions的自动部署'
-  githubUrl=https://oddfar:${GITHUB_TOKEN}@github.com/Master-Frank/Frank-Notes.git
+  githubUrl=https://Master-Frank:${GITHUB_TOKEN}@github.com/Master-Frank/Frank-Notes.git
   git config --global user.name "Master-Frank"
   git config --global user.email "1486493017@qq.com"
 fi

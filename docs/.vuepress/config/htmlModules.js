@@ -30,7 +30,7 @@ module.exports = {
     ">公众号</p>
     <img src="https://cdn.jsdelivr.net/gh/Master-Frank/Image-hosting/img/20211014173748.png"  style="width:100%;" />
     <p>
-    有趣研究社，各种有趣的、好玩的、沙雕的小网站或文章，等你去探索~
+    有各种有趣的、好玩的、沙雕的小网站或文章，等你去探索~
     </p>
     </div>`,
   // `<!-- 纵向自适应 -->
