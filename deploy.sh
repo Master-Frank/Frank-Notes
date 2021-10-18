@@ -3,16 +3,10 @@
 # 确保脚本抛出遇到的错误
 set -e
 
-#initDist(){
-#  echo $1 > base.js
-#}
-
-
-
 #------------------------------------------
 
 #url访问目录，这个是你 github 仓库的名字
-initDist "module.exports = '/Frank-Notes/'"
+#initDist "module.exports = '/Frank-Notes/'"
 
 # 生成静态文件
 npm run build
