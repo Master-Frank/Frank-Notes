@@ -8,7 +8,7 @@ module.exports = {
 
   title: "Frank's blog",
   description: '键盘敲烂，月薪过万',
-   base: '/Frank-Notes/', // 格式：'/<仓库名>/'， 默认'/'
+  //base: '/Frank-Notes/', // 格式：'/<仓库名>/'， 默认'/'
   markdown: {
     lineNumbers: true, // 代码行号
   },
