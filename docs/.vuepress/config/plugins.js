@@ -3,7 +3,7 @@ module.exports = [
   // 本地插件
    [require('../plugins/love-me'), { // 鼠标点击爱心特效
      color: '#11a8cd', // 爱心颜色，默认随机色
-     excludeClassName: 'theme-vdoing-content' // 要排除元素的class, 默认空''
+     //excludeClassName: 'theme-vdoing-content' // 要排除元素的class, 默认空''
    }],
 
   'vuepress-plugin-baidu-autopush', // 百度自动推送
@@ -31,10 +31,10 @@ module.exports = [
           title: '在Bing中搜索',
           frontUrl: 'https://cn.bing.com/search?q=',
         },
-        {
-          title: '通过百度搜索本站的',
-          frontUrl: 'https://www.baidu.com/s?wd=site%3Axugaoyi.com%20',
-        },
+        //{
+        //  title: '通过百度搜索本站的',
+        //  frontUrl: 'https://www.baidu.com/s?wd=site%3Axugaoyi.com%20',
+        //},
       ],
     },
   ],
