@@ -81,7 +81,7 @@ module.exports = {
     // 页脚信息
     createYear: 2021, // 博客创建年份
     copyrightInfo:
-      'Master Frank', // | <a href="" target="_blank">MIT License</a>', // 博客版权信息，支持a标签
+      'Master Frank  | <a href="https://beian.miit.gov.cn" target="_blank">粤ICP备2021148573号</a>', // 博客版权信息，备案号，支持a标签
   },
   htmlModules // 插入html(广告)模块
 }
