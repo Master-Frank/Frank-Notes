@@ -41,8 +41,6 @@ rm -rf docs/.vuepress/dist
 if [ -z "$SSH_PRIVATE_KEY" ]; then
   echo '如果是空字符串，则不部署到gitee'
 else
-  #url访问目录
-  initDist "module.exports = '/'"
   # 生成静态文件
   npm run build
   # 进入生成的文件夹
