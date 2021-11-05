@@ -41,7 +41,7 @@ jobs:
       - name: Push Gitee Mirror  #★★★★★★ 步骤4：推送到gitee★★★★★★
         env:
           SOURCE_REPO: 'https://github.com/Master-Frank/Frank-Notes.git'    #github 仓库地址
-          DESTINATION_REPO: 'https://gitee.com/frank-starbuck/Frank-Notes.git'    #gitee 仓库地址
+          DESTINATION_REPO: 'git@gitee.com:frank-starbuck/Frank-Notes.git'    #gitee 仓库地址
         run: |
           git clone --mirror "$SOURCE_REPO" && cd `basename "$SOURCE_REPO"`
           git remote set-url --push origin "$DESTINATION_REPO"
