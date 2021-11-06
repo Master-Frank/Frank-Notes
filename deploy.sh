@@ -30,7 +30,7 @@ git commit -m "${msg}"
 git push -f $githubUrl master:gh-pages # 推送到github
 
 #-----------同步到 gitee gh-pages分支------------------
-if [ -z "$GITTE_TOKEN" ]; then
+if [ -z "$TOKEN_GITTE" ]; then
   echo '如果是空字符串，则不部署到gitee'
 else
 
