@@ -51,8 +51,8 @@ jobs:
       
       - name: run deploy.sh # ★★★★★★ 步骤5：执行脚本deploy.sh★★★★★★
         env: # 设置环境变量
-          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }} # token私密变量
-          SSH_PRIVATE_KEY: ${{ secrets.GITEE_RSA_PRIVATE_KEY }}
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }} # Github_token私密变量
+          GITTE_TOKEN: ${{ secrets.GITEE_TOKEN }} # Gitte_token私密变量
         run: npm install && npm run deploy
 
       # - name: Build and Deploy # 步骤3 （只提交到github可以使用这个步骤）
