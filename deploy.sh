@@ -34,7 +34,7 @@ if [ -z "$GITTE_TOKEN" ]; then
   echo '如果是空字符串，则不部署到gitee'
 else
 
-  giteeUrl=https://Frank星子:${GITTE_TOKEN}@gitee.com/frank-starbuck/Frank-Notes.git  #gitee 仓库ssh地址
+  giteeUrl=https://frank-starbuck:${GITTE_TOKEN}@gitee.com/frank-starbuck/Frank-Notes.git  #gitee 仓库ssh地址
   
   git config --global user.name "Frank星子"
   git config --global user.email "1486493017@qq.com"
