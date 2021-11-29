@@ -1,10 +1,10 @@
 // 插件配置
 module.exports = [
   // 本地插件
-   [require('../plugins/love-me'), { // 鼠标点击爱心特效
-     color: '#11a8cd', // 爱心颜色，默认随机色
-     //excludeClassName: 'theme-vdoing-content' // 要排除元素的class, 默认空''
-   }],
+  [require('../plugins/love-me'), { // 鼠标点击爱心特效
+    color: '#11a8cd', // 爱心颜色，默认随机色
+    //excludeClassName: 'theme-vdoing-content' // 要排除元素的class, 默认空''
+  }],
 
   'vuepress-plugin-baidu-autopush', // 百度自动推送
 
@@ -98,6 +98,21 @@ module.exports = [
   //    },
   //  },
   //],
+  [
+    '@vssue/vuepress-plugin-vssue',
+    {
+      // 设置 `platform` 而不是 `api`
+      platform: 'github-v4', //如果使用github-v3，这里改为github
+      locale: 'zh', //语言：中文
+
+      // 其他的 Vssue 配置
+      owner: 'Master-Frank', //你的Gihub用户名
+      repo: 'Frank-Notes',  //你的vuepress所在仓库名称
+      clientId: 'cd316451343a5f21ffa2',  //OAuth app的Client ID
+      clientSecret: '75b3bf34987232dc4c8de198ef11884efabb8052',  //OAuth app的Client secret
+      autoCreateIssue: true // 自动创建评论，默认是false，最好设置为true，这样首次进入页面的时候就不用手动去创建评论了。
+    },
+  ],
   [
     '@vuepress/last-updated', // "上次更新"时间格式
     {
